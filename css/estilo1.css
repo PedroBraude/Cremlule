@@ -1,0 +1,24 @@
+.body{
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+}
+
+.a{
+	color: brown;
+	font-size: 12px;
+}
+
+
+
+
+

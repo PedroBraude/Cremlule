@@ -1,0 +1,43 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* para padre:
+	flex 
+	just 
+	y align */
+.padre{
+	background-color: grey;
+	padding: 20px;
+	display: flex;
+	flex-direction: row; /*row (en fila)prede,	row reverse cambia la dirección, column o column reverse*/
+	flex-wrap: nowrap;
+	/*flex-flow:  */ /*forma abreviada del flex dir y wrap*/
+	justify-content: center;
+}
+
+/*para hijo:
+	order; */
+
+.hijo1{
+	background-color: violet;
+	padding: 1px;
+	margin:	10px;
+	order: 2;
+
+}
+.hijo2{
+	background-color: violet;
+	padding: 1px;
+	margin:	10px;
+	order: 3;
+}
+
+.hijo3 {
+	background-color: violet;
+	padding: 1px;
+	margin:	10px;
+	order: 1;
+}
+	
