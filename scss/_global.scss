@@ -1,0 +1,34 @@
+:root {
+  font-size: $font-size-base;
+}
+html, body {
+  color: $black;
+  background: $gray;
+  font-family: $main-font;
+  font-size: .875rem;
+  font-weight: 400;
+  height: 100%;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .footer-login {
+    bottom: 0;
+    color: $gray;
+    display: block;
+    padding: 20px 15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 100%;
+
+    .vidich-logo {
+      position: absolute;
+      bottom: 15px;
+      right: 45px; 
+    }
+  }
+}
