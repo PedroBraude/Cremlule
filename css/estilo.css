@@ -18,6 +18,9 @@
     grid-gap: 1rem;
     grid-template-columns: 12.5rem 12.5rem;
     margin: auto; }
+  .centerAlign {
+    justify-content: center;
+    align-items: center; }
   .oferta {
     max-width: 100%;
     max-height: 100%;
@@ -47,6 +50,9 @@
     grid-gap: 1rem;
     grid-template-columns: 12.5rem 12.5rem;
     margin: auto; }
+  .centerAlign {
+    justify-content: center;
+    align-items: center; }
   .oferta {
     max-width: 100%;
     max-height: 100%;
@@ -68,7 +74,12 @@
   .container {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 12.5rem 12.5rem 12.5rem; }
+    grid-template-columns: 12.5rem 12.5rem 12.5rem;
+    justify-content: center;
+    align-items: center; }
+  .centerAlign {
+    justify-content: center;
+    align-items: center; }
   .oferta {
     max-width: 80%;
     max-height: 80%;
@@ -84,6 +95,24 @@
     grid-gap: 1rem;
     grid-template-columns: 12.5rem 12.5rem 12.5rem;
     padding: 0.938rem 0.938rem; }
+  .centerAlign {
+    justify-content: center;
+    align-items: center; }
+  .oferta {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    margin-top: 0.625rem; } }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 12.5rem 12.5rem 12.5rem;
+    padding: 0.938rem 0.938rem; }
+  .centerAlign {
+    justify-content: center;
+    align-items: center; }
   .oferta {
     max-width: 80%;
     max-height: 80%;
