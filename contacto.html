@@ -18,31 +18,28 @@
 </head>
 <body>
 	
-		<header>
+	<header>
 		<nav id="NavResponsive">
-			<div class="inline">
-				<button type="button" class="btn btn-primary btn-color" >
+			<div class="marginNav">
+				<button type="button" class="btn btn-primary btn-color menuBottonBackground" >
 					<a href="index.html">Inicio</a></button>
-				<button type="button" class="btn btn-primary dropdown-toggle btn-color" data-toggle="dropdown">
-						Tienda
-				</button>
-					<div class="dropdown-menu btn-color dropdown-menu-personalizado">
-						<a class="dropdown-item" href="tienda.html">Productos</a>
-						<a class="dropdown-item" href="ofertas.html">Desayunos y meriendas</a>
-						<a class="dropdown-item" href="carrito.html">Carrito</a>
-					</div>
-				
-				<button type="button" class="btn btn-primary btn-color">
+				<button type="button" class="btn btn-primary btn-color menuBottonBackground" >
+					<a href="tienda.html">Tienda</a></button>				
+				<button type="button" class="btn btn-primary btn-color menuBottonBackground">
 					<a href="ofertas.html">Ofertas</a></button>
 				<img class="logo" src="img/logo.jpg">	</img>
-				<button type="button" class="btn btn-primary btn-color">
-					<a href="quiénes.html" >Quiénes somos</a>
+				<button type="button" class="btn btn-primary btn-color menuBottonBackground ">
+					<a href="quienes.html" >
+						<span class="quienesSomos">Quiénes</span>
+						<span class="quienesSomos">Somos</span>
 				</button>
-				<button type="button" class="btn btn-primary btn-color">
+				<button type="button" class="btn btn-primary btn-color menuBottonBackground">
 				<a href="contacto.html">Contacto</a>
 				</button>
-				
-
+				<button type="button" class="btn btn-primary btn-color menuBottonBackground">
+					<a href="carrito.html" >Carrito</a>
+					<img src="img/carrito-de-compras.svg"  class="carrito">
+				</button>
 			</div>
 		</nav>
 	</header>
@@ -50,13 +47,15 @@
 	</div>
 	<main>
 		<section class="form">
-			<h4 class="form__title">Formulario De Contacto</h4>
-			<input class="form__controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-			<input class="form__controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-			<input class="form__controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-			<input class="form__controls" type="tel" name="teléfono" id="teléfono" placeholder="Ingrese su telefono">
-			<textarea class="form__texto" name="texto" id="texto" cols="30" rows="10" placeholder="Deje su mensaje aquí"></textarea>
-			<input class="form__botons" type="submit" value="Enviar">
+			<form>
+				<h4 class="form__title">Formulario De Contacto</h4>
+				<input class="form__controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+				<input class="form__controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+				<input class="form__controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+				<input class="form__controls" type="tel" name="teléfono" id="teléfono" placeholder="Ingrese su telefono">
+				<textarea class="form__texto" name="texto" id="texto" cols="30" rows="10" placeholder="Deje su mensaje aquí"></textarea>
+				<input class="form__botons" type="submit" value="Enviar">
+			</form>
 			
 		</section>
 			
@@ -64,11 +63,11 @@
 
 		
 	</main>
-	<hr>
+	
 	<footer class="container-fluid	yellow">
 		<div class="row">
 	       <div class="first-col col-md-4 col-lg-4 col-xs-4">
-	         <img src="img/logo.jpg" alt="Logo" class="footer-logo img-fluid" />
+	         <img src="img/logo.jpg" alt="Logo" class="footer-logo img-fluid logoFoot" />
 
 	         <h2>¿Querés recibir nuestras ofertas?</h2>
 	         <form>
