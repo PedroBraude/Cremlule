@@ -1,18 +1,47 @@
-//Carrito 
+// DOM
 
-function Carrito (productos, descuento) {
-	this.productos = productos;
-	this.descuento = descuento;
+var personita = document.getElementsByTagName("h1")
 
-	} 
+console.log(personita)
 
-	var carrito = new Carrito(["tocadiscos","mp4"], 0.5);
 
-	console.log(carrito)
+// Este es el constructor para la persona
 
-	var carritoJSON = JSON.stringify(carrito)
+function Persona(nombre, dni){
+    this.nombre = nombre;
+    this.dni = dni;
+}
 
-	localStorage.setItem("carrito", carritoJSON)
+
+// Cada vez que una persona entrra a mi pagina,
+// guardo su nombre
+
+    nombreGuardado = prompt("Ingrese su nombre")
+    sessionStorage.setItem("nombre", nombreGuardado)
+// }
+
+// En caso de que esa persona ya tuviese un carrito, se lo muestra
+
+if (sessionStorage.carrito){
+    alert("Terminá tu compra! Este es tu carrito:")
+    alert(JSON.parse(sessionStorage.carrito))
+} else {
+
+    // Sino, guarda un carrito con productos cualesquiera (?)
+
+    function Carrito(productos, descuento){
+        this.productos = productos;
+        this.descuento = descuento;
+    }
+
+    var carrito = new Carrito(["discman", "mp3", "ipod", "tocadiscos"], 0.5)
+
+    console.log(carrito);
+
+    var carritoJSON = JSON.stringify(carrito)
+
+    sessionStorage.setItem("carrito_" + nombreGuardado, carritoJSON)
+}
 
 
 
