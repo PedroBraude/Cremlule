@@ -1,3 +1,13 @@
+//eventos
+
+var deliciasSinGluten = function (){
+	alert("¡Delicias sin Gluten!")
+}
+
+var button = document.getElementById("button");
+button.addEventListener("click", deliciasSinGluten);
+
+
 // DOM
 
 var personita = document.getElementsByTagName("h1")
@@ -86,6 +96,16 @@ function ingredientes (harina,
 	this.jugoDeLimón = jugoDeLimón;
 	this.claraDeHuevo = claraDeHuevo;
 }
+
+//Eventos: se escriben con el prefijo "on" y luego la acción asociada. Ej: "onclick
+
+//Lista de eventos:
+
+//Click = un click
+//Change = cada vez que hay un cambio
+
+
+
 
 
 
