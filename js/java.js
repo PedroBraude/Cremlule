@@ -104,22 +104,3 @@ function ingredientes (harina,
 //Click = un click
 //Change = cada vez que hay un cambio
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
