@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^7.20.0",
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
   },
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
   "description": ""
 }

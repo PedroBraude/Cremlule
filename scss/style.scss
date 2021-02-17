@@ -18,33 +18,146 @@ $Pcolor: blanco;
 	box-sizing: border-box;
 }
 
-@media screen and (max-width: 576px) {
-	.btn-primary{
-	 	display: block;
+header {
+	width: 100%;
+}
+
+.smallLogo{
+	display: none;
+}
+
+.navMobile {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	background: #ffa012;
+}
+
+.menu_bar {
+	display: none;
+}
+
+.menu_ul {
+	overflow: hidden;
+	list-style: none;
+
+}
+
+
+.menu_button-a{
+    display: block;
+    margin: 0.5rem;
+}
+section {
+	padding: 20px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 320px) {
+	.smallLogo {
+		display: inline;
+		height: 60px;
+		width:60px;
+		border-radius: 120px;
+		position: relative;
+   	 	left: 20px;
 	}
-	img.logo{
-		position: absolute;
-		top: 0.625rem;
-		right: 2.5rem;
+
+	.bigLogo {
+		display: none;
 	}
+	.navMobile {
+		width: 23%;
+		height: 45%;
+		right:  -100%	;
+		margin: 0;
+		position: fixed;
+
+
+	}
+
+	.menu_ul {
+		border: 2px black;
+
+
+	}
+
+	.menu_button {
+		display: block;
+		float: none;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+		background: none;
+		margin-bottom: 20px;
+
+
+
+	}
+
+
+
+	.menu_bar {
+		display: block;
+		width:	100%;
+		background: #ccc;
+
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 10px;
+		background: #ffa012;
+		color: #fff;
+		text-decoration: none;
+		font-size: 25px;
+		box-sizing: border-box;
+		font-weight:bold;
+
+
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+		position: relative;
+	    bottom: -6px;
+	    right: -5px;
+	}
+
+
+	.btn-whatsapp {
+        display:block;
+        width: 4.375rem;
+        height: 4.375rem;
+        position: fixed;
+        left: 1.25rem;
+        bottom: 1.25rem;
+        border-radius:50%;
+        line-height: 5rem;
+        text-align:center;
+        z-index:999;
+	}
+
 
 	.container {
-		display: grid;
-		grid-gap:1rem;
-		grid-template-columns: 12.5rem 12.5rem;
-		margin: auto;
-		
-		}
+	    display: grid;
+	    grid-gap: 1rem;
+	    grid-template-columns: 8rem 8rem;
+	    margin: auto;
+			}
 
-	.centerAlign {
-		justify-content: center; 
-		align-items:center;
+	.alineacionCentral {
+		justify-content: center;
+		align-items:center
 	}
 
 	.oferta {
-		max-width: 100%;
-		max-height: 100%;
+		margin:auto;
 		margin-top: 0.625rem;
+		height: 60%;
+		width: 60%;
+		border-radius: 0.625rem;
 	}
 	section.form {
 		width: 100%;
@@ -59,36 +172,120 @@ $Pcolor: blanco;
 		color: white;
 		box-shadow: 7px 13px 37px $brown;
 	}
+	h1 {
+		display: none;
+	}
 
-	
+	h2 {
+		display: none;
+	}
+
+	.inputEmail {
+		display: none;
+	}
+
 }
+@media screen and (min-width: 321px) and(max-width: 376px) {
+	.smallLogo {
+		display: inline;
+		height: 60px;
+		width:60px;
+		border-radius: 120px;
+		position: relative;
+   	 	left: 20px;
+	}
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-	.btn-primary{
-	 	display: block;
+	.bigLogo {
+		display: none;
 	}
-	img.logo{
-		position: absolute;
-		top: 0.625rem;
-		right: 2.5rem;
+	.navMobile {
+		width: 30%;
+		height: 71%;
+		right:  -100%;
+		margin: 0;
+		position: fixed;
 	}
+
+	.menu_button {
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+		border-style: none;
+		background: none;
+
+
+	}
+	.menu_button-a{
+	color: #fff;
+	text-decoration: none;
+	display: inline;
+	}
+	.menu_bar {
+		display: block;
+		width:	100%;
+		background: #ccc;
+
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 10px;
+		background: #ffa012;
+		color: #fff;
+		text-decoration: none;
+		font-size: 25px;
+		box-sizing: border-box;
+		font-weight:bold;
+
+
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	    position: relative;
+	    bottom: -6px;
+	    right: -5px;
+	}
+
+
+
+		.btn-whatsapp {
+        display:block;
+        width: 4.375rem;
+        height: 4.375rem;
+        position: fixed;
+        left: 1.25rem;
+        bottom: 1.25rem;
+        border-radius:50%;
+        line-height: 5rem;
+        text-align:center;
+        z-index:999;
+	}
+
+
+
+
 	.container {
-		display: grid;
-		grid-gap:1rem;
-		grid-template-columns: 12.5rem 12.5rem;
-		margin: auto;
+	    display: grid;
+	    grid-gap: 2rem;
+	    grid-template-columns: 8rem 8rem;
+	    margin: auto;
+			}
 
+	.alineacionCentral {
+		justify-content: center;
+		align-items:center
 	}
-	.centerAlign {
-		justify-content: center; 
-		align-items:center;
-	}
+
 	.oferta {
-		max-width: 100%;
-		max-height: 100%;
+		margin:auto;
 		margin-top: 0.625rem;
+		height: 60%;
+		width: 60%;
+		border-radius: 0.625rem;
 	}
-		section.form {
+	section.form {
 		width: 100%;
 		height: 100%;
 		background: $brown;
@@ -101,82 +298,443 @@ $Pcolor: blanco;
 		color: white;
 		box-shadow: 7px 13px 37px $brown;
 	}
+	h1 {
+		display: none;
+	}
 
-	
+	h2 {
+		display: none;
+	}
+
+	.inputEmail {
+		display: none;
+	}
+
+}
+@media screen and (min-width: 377px) and (max-width: 767px) {
+	.smallLogo {
+		display: inline;
+		height: 60px;
+		width:60px;
+		border-radius: 120px;
+		position: relative;
+   	 	left: 20px;
+	}
+
+	.bigLogo {
+		display: none;
+	}
+	.navMobile {
+		width: 30%;
+		height: 100%;
+		right:  -100%;
+		margin: 0;
+		position: fixed;
+	}
+	.menu_button-a{
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+	display: inline;
+	}
+	.menu_button {
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+		border-style: none;
+		background: none;
+
+	}
+
+	.menu_bar {
+		display: block;
+		width:	100%;
+		background: #ccc;
+
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 10px;
+		background: #ffa012;
+		color: #fff;
+		text-decoration: none;
+		font-size: 25px;
+		box-sizing: border-box;
+		font-weight:bold;
+
+
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	    position: relative;
+	    bottom: -6px;
+	    right: -5px;
+	}
+
+
+
+		.btn-whatsapp {
+        display:block;
+        width: 4.375rem;
+        height: 4.375rem;
+        position: fixed;
+        left: 1.25rem;
+        bottom: 1.25rem;
+        border-radius:50%;
+        line-height: 5rem;
+        text-align:center;
+        z-index:999;
+	}
+	.container {
+	    display: grid;
+	    grid-gap: 1rem;
+	    grid-template-columns: 7.5rem 7.5rem 7.5rem;
+	    margin: auto;
+			}
+
+	.alineacionCentral {
+		justify-content: center;
+		align-items:center
+	}
+
+	.oferta {
+		margin:auto;
+		margin-top: 0.625rem;
+		height: 60%;
+		width: 60%;
+		border-radius: 0.625rem;
+	}
+	section.form {
+		width: 100%;
+		height: 100%;
+		background: $brown;
+		padding: 1.875rem;
+		margin:  auto;
+		margin-top: 1.563px;
+		margin-bottom: 100px;
+		border-radius: 15px;
+		font-family: $secondary-font;
+		color: white;
+		box-shadow: 7px 13px 37px $brown;
+	}
+	h1 {
+		display: none;
+	}
+
+	h2 {
+		display: none;
+	}
+
+	.inputEmail {
+		display: none;
+	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.smallLogo {
+		display: inline;
+		height: 60px;
+		width:60px;
+		border-radius: 120px;
+		position: relative;
+   	 	left: 20px;
+	}
+
+	.bigLogo {
+		display: none;
+	}
+	.navMobile {
+		width: 30%;
+		height: 100%;
+		right:  -100%;
+		margin: 0;
+		position: fixed;
+	}
+	.menu_button-a{
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+	display: inline;
+	}
+	.menu_button {
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+		border-style: none;
+		background: none;
+
+	}
+
+	.menu_bar {
+		display: block;
+		width:	100%;
+		background: #ccc;
+
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 10px;
+		background: #ffa012;
+		color: #fff;
+		text-decoration: none;
+		font-size: 25px;
+		box-sizing: border-box;
+		font-weight:bold;
+
+
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	    position: relative;
+	    bottom: -6px;
+	    right: -5px;
+	}
+
+	.btn-whatsapp {
+		display:block;
+		width: 4.375rem;
+		height: 4.375rem;
+		position: fixed;
+		left: 1.25rem;
+		bottom: 1.25rem;
+		border-radius:50%;
+		line-height: 5rem;
+		text-align:center;
+		z-index:999;
+	}
 	.container {
 		display: grid;
-		grid-gap:1rem;
-		grid-template-columns: 12.5rem 12.5rem 12.5rem;
-		justify-content: center; 
-		align-items:center;
-		}
+	    grid-gap: 3rem;
+	    grid-template-columns: 12rem 12rem 12rem;
+	    margin: auto;
+			}
 
-	.centerAlign {
-		justify-content: center; 
-		align-items:center;
+	.alineacionCentral {
+		justify-content: center;
+		align-items:center
 	}
+
 	.oferta {
-		max-width: 80%;
-		max-height: 80%;
-		margin: auto;
+		margin:auto;
 		margin-top: 0.625rem;
-	
-		}	
-	button.btn{
-	 	margin: 0px;
-	 	padding: 0px;
+		height: 60%;
+		width: 60%;
+		border-radius: 0.625rem
+	}
+	section.form {
+		width: 100%;
+		height: 100%;
+		background: $brown;
+		padding: 1.875rem;
+		margin:  auto;
+		margin-top: 1.563px;
+		margin-bottom: 100px;
+		border-radius: 15px;
+		font-family: $secondary-font;
+		color: white;
+		box-shadow: 7px 13px 37px $brown;
+	}
+	h1 {
+		display: none;
+	}
+
+	h2 {
+		display: none;
+	}
+
+	.inputEmail {
+		display: none;
 	}
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-		.container {
-			display: grid;
-			grid-gap:1rem;
-			grid-template-columns: 12.5rem 12.5rem 12.5rem;
-			padding: 0.938rem 0.938rem;
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.menu_button {
+		background: #37170C;
+  	  	margin: 1rem;
+
 	}
 
-		.centerAlign {
-			justify-content: center; 
-			align-items:center;
+	.menu_button:hover {
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 	}
-				
-		
-		.oferta {
-			max-width: 80%;
-			max-height: 80%;
-			margin: auto;
-			margin-top: 0.625rem;
-	
-		}	
-	}
+	.smallLogo {
+		display: none;
+			}
 
-@media screen and (min-width: 1200px) {
+	.bigLogo {
+		display: inline;
+	    height: 3.75rem;
+	    width: 3.75rem;
+	    border-radius: 7.5rem;
+	    position: relative;
+	    left: 1.25rem;
+	    margin-right: 2.5rem;
+	}
+	.btn-whatsapp {
+        display:block;
+        width: 4.375rem;
+        height: 4.375rem;
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        border-radius:50%;
+        line-height: 5rem;
+        text-align:center;
+        z-index:999;
+	}
 	.container {
 		display: grid;
 		grid-gap:1rem;
 		grid-template-columns: 12.5rem 12.5rem 12.5rem;
 		padding: 0.938rem 0.938rem;
-	
-			
 	}
 
-	.centerAlign {
-			justify-content: center; 
-			align-items:center;
-		}
-
+	.alineacionCentral {
+		justify-content: center;
+		align-items:center
+	}
 	.oferta {
-		max-width: 80%;
-		max-height: 80%;
-		margin: auto;
+		margin:auto;
 		margin-top: 0.625rem;
-	
-		}	
+		height: 60%;
+		width: 60%;
+		border-radius: 0.625rem;
 	}
-	
+	h1 {
+		font-size: 2.5rem;
+		letter-spacing: 1rem;
+
+	}
+
+	}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+	.menu_button {
+		background: #37170C;
+  	  	margin: 1rem;
+
+	}
+		.menu_button:hover {
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.smallLogo {
+		display: none;
+			}
+
+	.bigLogo {
+		display: inline;
+	    height: 3.75rem;
+	    width: 3.75rem;
+	    border-radius: 7.5rem;
+	    position: relative;
+	    left: 1.25rem;
+	    margin-right: 2.5rem;
+	}
+	.btn-whatsapp {
+        display:block;
+        width: 4.375rem;
+        height: 4.375rem;
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        border-radius:50%;
+        line-height: 5rem;
+        text-align:center;
+        z-index:999;
+	}
+	.container {
+		display: grid;
+		grid-gap:1rem;
+		grid-template-columns: 12.5rem 12.5rem 12.5rem;
+		padding: 0.938rem 0.938rem;
+	}
+
+	.alineacionCentral {
+		justify-content: center;
+		align-items:center
+}
+	.oferta {
+		margin:auto;
+		margin-top: 0.625rem;
+		height: 60%;
+		width: 60%;
+		border-radius: 0.625rem;
+	}
+	h1 {
+		font-size: 2.5rem;
+		letter-spacing: 1rem;
+
+	}
+	}
+
+@media screen and (min-width: 1920px)  {
+	.menu_button {
+		background: #37170C;
+  	  	margin: 1rem;
+
+	}
+
+	.menu_button:hover {
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.smallLogo {
+		display: none;
+			}
+
+	.bigLogo {
+		display: inline;
+	    height: 3.75rem;
+	    width: 3.75rem;
+	    border-radius: 7.5rem;
+	    position: relative;
+	    left: 1.25rem;
+	    margin-right: 2.5rem;
+	}
+	.btn-whatsapp {
+        display:block;
+        width: 4.375rem;
+        height: 4.375rem;
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        border-radius:50%;
+        line-height: 5rem;
+        text-align:center;
+        z-index:999;
+	}
+	.container {
+		display: grid;
+		grid-gap:1rem;
+		grid-template-columns: 12.5rem 12.5rem 12.5rem;
+		padding: 0.938rem 0.938rem;
+	}
+
+	.alineacionCentral {
+		justify-content: center;
+		align-items:center
+	}
+	.oferta {
+		margin:auto;
+		margin-top: 0.625rem;
+		height: 60%;
+		width: 60%;
+		border-radius: 0.625rem;
+	}
+	h1 {
+		font-size: 2.5rem;
+		letter-spacing: 1rem;
+
+	}
+
+	}
+
+
 li{
 	list-style: none;
 }
@@ -238,7 +796,7 @@ body {
 		color: white;
 		background-color: $brown;
 		font-family: $principal-font;
-		font-size: 12px; 
+		font-size: 12px;
 		text-transform: uppercase;
 		text-align: center;
 		background-image: url(); /*poner fondo del toro*/
@@ -246,20 +804,7 @@ body {
 	header {
 		nav{
 			background-color: $yellow;
-		  	.btn-color {
-				color: #fff;
-			    background-color: $yellow;
-			    border-color: $yellow	;
-			    margin: 0 20px 0 20px;
-   			.btn-group-color {
-				color: white;
-				background-color: $yellow;
-				border: none;
-				margin-right: 150px;
-				margin-left: 150px;
 
-	}
-    }
   }
  }
 }
@@ -271,8 +816,6 @@ body {
 }
 h1{
 	font-family: $secondary-font;
-	font-size: 40px; 
-	letter-spacing: 16px;
 	margin: 20px;
 	padding: 12px;
 	background-color: $yellow;
@@ -294,16 +837,6 @@ h2{
 
 }
 
-.logo{
-	height: 100px;
-	width: 100px;	
-	border: 5px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 20px;
-}
 
 
 .margin {
@@ -432,7 +965,7 @@ margin-top: 5px;
 
 
 .item_img {
-	max-width: 100%;
+	width: 100%;
 	border-radius: 12px 12px 0px 0px;
 
 
@@ -445,7 +978,7 @@ h3 {
 }
 
 .marginBottom {
-	margin-bottom: 12px;
+	margin-bottom: 0.8rem;
 }
 
 .item {
@@ -494,3 +1027,25 @@ h1,h2,h3:hover{
 	margin-bottom: 40px;		
 } 
 
+    .zoom, .btn-yellow, h1, h2, p, li, .Tarjetas, .logoFoot{
+        /* Aumentamos la anchura y altura durante 2 segundos */
+        transition: width 1s, height 1s, transform 1s;
+    }
+    .btn-yellow:hover,  .zoom:hover, h1:hover, h2:hover, p:hover, li:hover, .Tarjetas:hover, .logoFoot:hover{
+        /* tranformamos el elemento al pasar el mouse por encima al doble de
+           su tamaño con scale(2). */
+        transform : scale(1.05);
+    }
+
+
+
+   .logoFoot {
+    height: 6.25rem;
+	width: 6.25rem;	
+	border: 0.313rem;
+	margin-bottom: 0.313rem;
+	margin-top: 0.313rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1.26rem;
+    }
