@@ -1,4 +1,9 @@
 //eventos
+$( document ).ready(function() 
+{
+   alert( "Bienvenides a Cremlulé" );
+});
+
 
 var deliciasSinGluten = function (){
 	alert("¡Delicias sin Gluten!")
